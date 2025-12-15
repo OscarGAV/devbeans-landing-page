@@ -2,4 +2,4 @@
 
 ## Deployed Link
 
-[Dev Beans Landing Page](https://devbeans-landing-page.example.com)
+[https://dev-beans-landing-page.netlify.app/](https://dev-beans-landing-page.netlify.app/)
