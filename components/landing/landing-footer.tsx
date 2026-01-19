@@ -18,10 +18,10 @@ export function LandingFooter() {
 
             <nav className="flex items-center gap-8">
               <a href="#product" className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors">
-                Product
+                The Product
               </a>
-              <a href="#costumers" className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors">
-                Costumers
+              <a href="#team" className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors">
+                The Team
               </a>
               <a href="#pricing" className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors">
                 Pricing

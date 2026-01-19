@@ -47,38 +47,12 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="mt-20 text-center">
-          <p className="text-base sm:text-lg text-gray-700 mb-10 max-w-4xl mx-auto">
+        <div className="mt-15 text-center">
+          <p className="text-base sm:text-lg text-gray-700 max-w-4xl mx-auto">
             <span className="font-semibold">COMPATIBLE WITH</span>{" "}
-            <span className="text-[#1DD1A1] font-semibold">COMMON OR INDUSTRIAL CAMERAS</span>
-            <span className="text-gray-700">, WITHOUT THE NEED FOR SPECIALIZED HARDWARE.</span>
+            <span className="text-[#1DD1A1] font-semibold">PNG OR JPG FILES</span>
+            <span className="font-semibold"> OF COFFEE GRAIN IMAGES.</span>
           </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 max-w-4xl mx-auto">
-            <div className="flex flex-col items-center">
-              <div className="flex items-center gap-3 text-[#1DD1A1] mb-2">
-                <Download className="h-8 w-8" />
-                <span className="text-5xl font-bold">10K+</span>
-              </div>
-              <p className="text-gray-700 font-medium text-lg">Downloads</p>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <div className="flex items-center gap-3 text-[#1DD1A1] mb-2">
-                <MessageSquare className="h-8 w-8" />
-                <span className="text-5xl font-bold">50k+</span>
-              </div>
-              <p className="text-gray-700 font-medium text-lg">Reviews</p>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <div className="flex items-center gap-3 text-[#1DD1A1] mb-2">
-                <Star className="h-8 w-8" />
-                <span className="text-5xl font-bold">4.1</span>
-              </div>
-              <p className="text-gray-700 font-medium text-lg">Qualification</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

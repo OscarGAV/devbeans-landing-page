@@ -1,87 +1,102 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Star } from "lucide-react"
+"use client"
 
-const testimonials = [
+import { Card, CardContent } from "@/components/ui/card"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+import { CircleUserRound } from "lucide-react"
+
+const teamMembers = [
   {
-    name: "Melinda Len",
-    role: "Granjero Cafetero",
-    content:
-      "Antes perdíamos mucho producto por errores humanos. Ahora clasifican los datos reales, y los resultados son impresionantes. Confían más en nuestro producto.",
-    rating: 4,
-    image: "/latin-american-woman-coffee-farmer.jpg",
+    name: "Oscar Gabriel Aranda Vallejos",
+    role: "Software Engineer",
+    description:
+        "Tengo 20 años y soy un estudiante de 8vo ciclo en Ingeniería de Software con conocimientos en Unity, C++ y diseño web. Los caminos que he tomado me han vuelto perseverante en cumplir mis objetivos y siempre estoy dispuesto a aprender nuevos conceptos.",
   },
   {
-    name: "Jacob Stevan",
-    role: "Granjero Cafetero",
-    content:
-      "Con BeanDetect AI, nuestros lotes cumplen los estándares sin discusiones. La clasificación es precisa y nos ha ayudado a exportar más café.",
-    rating: 5,
-    image: "/latin-american-man-coffee-farmer.jpg",
+    name: "Abraham Israel Ayquipa Ubaldo",
+    role: "Software Engineer",
+    description:
+        "Soy un estudiante de 8vo ciclo en ingeniería de software con experiencia desempeñándome como fullstack developer. Suelo trabajar con Next.js + TypeScript y Node.js + MongoDB. Y actualmente estoy aprendiendo Docker y Redis.",
   },
   {
-    name: "Roben Musstar",
-    role: "Granjero Cafetero",
-    content:
-      "El sistema detecta defectos que ni siquiera nosotros veíamos. Es rápido, confiable y ha permitido mejorar la calidad sin necesidad de equipos caros.",
-    rating: 4,
-    image: "/latin-american-man-coffee-farmer-with-hat.jpg",
+    name: "André Sebastián La Torre",
+    role: "Software Engineer",
+    description:
+        "Me encuentro en el octavo ciclo de Ingeniería de Software. Tengo experiencia en Python, C++, JavaScript, SQL y desarrollo web y móvil. Elegí esta carrera por mi afinidad con las matemáticas y nuevas tecnologías. Disfruto aprender y mejorar constantemente.",
+  },
+  {
+    name: "Eduardo",
+    role: "Designer & QA Manager",
+    description:
+        "Poseo conocimientos en HTML, CSS, JavaScript, Python, C++, Cypress, Node.js, Nest.js y Agile Project Management. Además, me encuentro cursando el 8vo ciclo en ingeniería de software y tengo experiencia en diseño de software y QA. ",
   },
 ]
 
 export function TestimonialsSection() {
   return (
-    <section id="costumers" className="py-20 sm:py-24 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center mb-4">
-          <p className="text-sm font-semibold text-[#1DD1A1] tracking-wide uppercase mb-2">OUR REVIEW</p>
-          <h2 className="text-4xl font-bold text-gray-800">
-            What our <span className="text-[#1DD1A1]">clients</span> say about us
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">Here are some comments from our customers, be one of them.</p>
+      <section id="costumers" className="py-20 sm:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center mb-4">
+            <p className="text-sm font-semibold text-[#1DD1A1] tracking-wide uppercase mb-2 animate-fade-in">OUR TEAM</p>
+            <h2 className="text-4xl font-bold text-gray-800 animate-fade-in-up">
+              Meet our <span className="text-[#1DD1A1]">team</span>
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>The talented people behind BeanDetect AI</p>
+          </div>
+
+          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mt-12">
+            {teamMembers.map((member, index) => (
+                <Card
+                    key={member.name}
+                    className="relative border-2 border-gray-200 hover:border-[#1DD1A1] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-in-up"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="pt-8 pb-6 px-6">
+                    <div className="flex flex-col items-center text-center mb-4">
+                      <Avatar className="h-20 w-20 mb-4 transition-transform duration-300 hover:scale-110">
+                        <AvatarFallback className="bg-[#1DD1A1] text-white">
+                          <CircleUserRound className="h-12 w-12" />
+                        </AvatarFallback>
+                      </Avatar>
+                      <p className="font-bold text-base text-gray-800 transition-colors duration-300 hover:text-[#1DD1A1]">{member.name}</p>
+                      <p className="text-sm text-[#1DD1A1] font-medium mb-3">{member.role}</p>
+                    </div>
+                    <p className="text-sm leading-relaxed text-gray-600 text-center">{member.description}</p>
+                  </CardContent>
+                </Card>
+            ))}
+          </div>
         </div>
 
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-3 mt-12">
-          {testimonials.map((testimonial, index) => (
-            <Card
-              key={testimonial.name}
-              className={`relative border-2 ${index === 1 ? "lg:-mt-8 lg:mb-8 border-gray-300 shadow-xl" : "border-gray-200"}`}
-            >
-              <CardContent className="pt-8 pb-6 px-6">
-                <div className="text-4xl text-[#1DD1A1] mb-4">"</div>
-                <p className="text-sm leading-relaxed text-gray-600 mb-6">{testimonial.content}</p>
+        <style jsx>{`
+          @keyframes fade-in {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
 
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className={`h-4 w-4 ${
-                        i < testimonial.rating ? "fill-[#1DD1A1] text-[#1DD1A1]" : "fill-gray-300 text-gray-300"
-                      }`}
-                    />
-                  ))}
-                </div>
+          @keyframes fade-in-up {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
 
-                <div className="flex items-center gap-3">
-                  <Avatar className="h-12 w-12">
-                    <AvatarImage src={testimonial.image || "/placeholder.svg"} alt={testimonial.name} />
-                    <AvatarFallback className="bg-[#1DD1A1] text-white">
-                      {testimonial.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <p className="font-semibold text-sm text-gray-800">{testimonial.name}</p>
-                    <p className="text-xs text-gray-500">{testimonial.role}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
+          .animate-fade-in {
+            animation: fade-in 0.6s ease-out;
+          }
+
+          .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out;
+            animation-fill-mode: both;
+          }
+        `}</style>
+      </section>
   )
 }

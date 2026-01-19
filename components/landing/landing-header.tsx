@@ -26,10 +26,10 @@ export function LandingHeader() {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
               <a href="#product" className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors">
-                Product
+                The Product
               </a>
-              <a href="#costumers" className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors">
-                Costumers
+              <a href="#team" className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors">
+                The Team
               </a>
               <a href="#pricing" className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors">
                 Pricing
@@ -61,13 +61,13 @@ export function LandingHeader() {
               <div className="md:hidden py-4 border-t border-gray-200">
                 <nav className="flex flex-col gap-4">
                   <a href="#product" className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors">
-                    Product
+                    The Product
                   </a>
                   <a
-                      href="#costumers"
+                      href="#team"
                       className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors"
                   >
-                    Costumers
+                    The Team
                   </a>
                   <a href="#pricing" className="text-sm font-medium text-gray-600 hover:text-[#1DD1A1] transition-colors">
                     Pricing
