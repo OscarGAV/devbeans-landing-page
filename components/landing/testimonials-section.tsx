@@ -33,7 +33,7 @@ const teamMembers = [
 
 export function TestimonialsSection() {
   return (
-      <section id="costumers" className="py-20 sm:py-24 bg-white">
+      <section id="team" className="py-20 sm:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-4">
             <p className="text-sm font-semibold text-[#1DD1A1] tracking-wide uppercase mb-2 animate-fade-in">OUR TEAM</p>

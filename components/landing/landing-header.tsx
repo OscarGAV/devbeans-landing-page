@@ -13,7 +13,7 @@ export function LandingHeader() {
       <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
-            <Link href="/" className="flex items-center">
+            <div className="flex items-center">
               <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-GqC5XnvLynE12ksxziQs6C3A7FG9b7.png"
                   alt="DetectBean AI"
@@ -21,7 +21,7 @@ export function LandingHeader() {
                   height={40}
                   className="h-10 w-auto"
               />
-            </Link>
+            </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
