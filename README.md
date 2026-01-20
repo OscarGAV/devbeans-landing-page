@@ -1,5 +1,12 @@
 # Landing Page for Dev Beans Startup
 
+## Screenshots of Local Environment
+
+[![Captura_de_pantalla_2026_01_20_114541.png](https://i.postimg.cc/QMJbZYHN/Captura_de_pantalla_2026_01_20_114541.png)](https://postimg.cc/SXj8Wr6H)
+
+[![Captura_de_pantalla_2026_01_20_115636.png](https://i.postimg.cc/9fYpHgrC/Captura_de_pantalla_2026_01_20_115636.png)](https://postimg.cc/hJhx9rL5)
+
+
 ## Deployed Link
 [https://dev-beans-landing-page.netlify.app/](https://dev-beans-landing-page.netlify.app/)
 
@@ -31,9 +38,3 @@
 ### Language
 - **TypeScript** - Typed superset of JavaScript
 
-
-## Screenshots of Local Environment
-
-[![Captura_de_pantalla_2026_01_20_114541.png](https://i.postimg.cc/QMJbZYHN/Captura_de_pantalla_2026_01_20_114541.png)](https://postimg.cc/SXj8Wr6H)
-
-[![Captura_de_pantalla_2026_01_20_115636.png](https://i.postimg.cc/9fYpHgrC/Captura_de_pantalla_2026_01_20_115636.png)](https://postimg.cc/hJhx9rL5)
